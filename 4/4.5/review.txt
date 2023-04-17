@@ -1,0 +1,78 @@
+2.
+a.He sold the painting for 234.50.
+b.Hi!
+c.His Hamlet was funny without being vulgar.
+  has 42 characters.
+d. Is 1.20e3 the same as 1201.00?
+
+3.
+printf("\"%s\"\nhas %d characters.\n", Q, strlen(Q));
+
+4.
+#include <stdio.h>
+# define B  "booboo"
+# define X  10
+
+int main(void)
+{
+    int age, xp;
+    char name[40];
+
+    printf("Please enter your first name. \n");
+    scanf("%s", name);
+    printf("All right, %s, what's your age?\n", name);
+    scanf("%d", &age);
+    xp = age + X;
+    printf("That's a %s! You must be at least %d.\n", B, xp);
+
+    return 0;
+}
+
+5.
+printf("This copy of \"%s\" sells for %.2f.\n", BOOK, cost);
+printf("That is %.0f%% of list.\n", precent);
+
+6.
+a.%d
+b.%4X
+c.%10.3f
+d.%12.2e
+e.%-30s
+
+7.
+a.%15lu
+b.%4#x
+c.%-12.2E
+d.%+10.3f
+e.%8.8s
+
+8.
+a.%6.4d
+b.%*o
+c.%2c
+d.%+0.2f
+e.%-7.5s
+
+9.
+a.int num;  scanf("%d", &num);
+b.float a, b;   scanf("%f %f", &a, &b);
+c.char ch[40];  scanf("%s", ch);
+d.char ch[40];  int num;    scanf("%s %d", ch, &num);
+e.int num; scanf("%*s %d", &num);
+
+10.
+空格、制表符、换行符
+
+11.
+问题：z为修饰符不能单独使用
+修正：printf("The double type is %zd bytes..\n", sizeof(double));
+
+12.
+不可行
+#define (   {
+#define {   (
+
+int main(void)
+{
+    
+}

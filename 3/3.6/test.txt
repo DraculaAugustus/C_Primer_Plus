@@ -1,0 +1,44 @@
+12  ->   int -->  %d
+0x3 ->   unsigned int  -->   %#x
+'C' ->   char	       -->   %c
+2.34E07->double        -->   %e
+'\040' ->char          -->   %c
+7.0    ->double	       -->   %f
+6L     ->long	       -->   %ld
+6.0f   ->float         -->   %f
+
+
+012    ->unsigned int  -->   %#o
+2.9e05L->long double   -->   %le
+'s'    ->char          -->   %c
+100000 ->long          -->   %ld
+'\n'   ->char          -->   %c
+20.0f  ->float         -->   %f
+0x44   ->unsigned int  -->   %#x
+
+%d,%ld,
+%f,%c
+
+char ch;
+ch = '\r';
+ch = 13;
+ch = '\015';
+ch = '\xd';
+
+
+#include <stdio.h>
+int main(void)
+{
+	int cows, legs;
+	printf("how many cow legs did you count?\n");
+	scanf("%d", &legs);
+	cows = legs/4;
+	printf("That implies there are %d cows.\n", cows);
+
+	return 0;
+}
+
+\n  -> 回车
+\\  -> \字符
+\"  -> "字符
+\t  -> 水平制表符 

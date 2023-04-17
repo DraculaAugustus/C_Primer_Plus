@@ -1,0 +1,80 @@
+1.
+a.true && false ---> false
+b.true || false ---> ture
+c.!true ---> false
+
+2.
+a.number >= 90 && number < 100
+b.ch != 'q' && ch != 'k'
+c.(num >= 1 && num <= 9) && (num != 5)
+d.num < 1 || num > 9
+
+3.
+#include <stdio.h>
+
+int main(void)
+{
+    int weight, heigth;
+    scanf("%d %d", &weight, &heigth);
+
+    if (weight > 100 && heigth < 64)
+    {
+        if (heigth >= 72)
+            printf("You are very tall for your weight.\n");
+        else if (heigth < 72)
+            printf("You are tall for your weight.\n");
+    }
+
+    else if (weight > 300 && heigth < 48)
+        printf("You are quite short for your weight.\n");
+    else
+        printf("Your weight is ideal.\n");
+
+    return 0;
+}
+
+4.
+a.1
+b.3+4>2&&3<2 ---> ((3+4)>2) && (3<2) ---> (7>2)&&(3<2) true&&false --->0
+c.1
+d.d = 6
+e.10
+f.0     (x = 3, y = 5) (3>5)?(5>3):(3>5)
+
+5.
+*#%*#%$#%*#%*#%$#%*#%*#%$#%*#%*#%
+
+6.
+fat hat cat Oh no! 
+hat cat Oh no! 
+cat Oh no! 
+
+7.
+1)
+/* 统计小写字符*/
+/* 统计大写字符*/
+/* 统计其他字符*/
+2) if(ch >= 'a' && ch <= 'z')
+3) if(ch >= 'A' && ch <= 'Z')
+4) 缺少else
+5) printf("%d lowecasem, %d uppercase, %d other", lc, uc, oc);
+
+8.
+永远打印    You are 65. Here is your gold watch.
+
+9.
+q
+Step1
+Step2
+Step3
+c
+Step1
+h
+Step1
+Step3
+b
+Step1
+Done
+
+10.
+见代码10.c

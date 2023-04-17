@@ -1,0 +1,134 @@
+1.
+quack = 2
+quack = 7
+quack = 70
+quack = 64
+quack = 8
+quack = 2
+
+2.
+ 36 18  9  4  2  1
+一直循环，直到浮点数下溢
+
+3.
+a.x > 5
+b.scanf("%lf", &x) == 0
+c.x == 5
+
+4.
+a.scanf("%d", &x) == 1
+b.x != 5
+c.x >= 20
+
+5.
+#include <stdio.h>
+int main(void)
+{
+    int i, j, list[10];
+
+    for (i = 1; i <= 10; i++)
+    {
+        list[i] = 2*i + 3;
+
+        for (j = 1; j <= i; j++)
+            printf(" %d", list[j]);
+        printf("\n");
+    }
+
+    return 0;
+}
+
+6.
+#include <stdio.h>
+
+int main(void)
+{
+    int i, j;
+
+    for(i = 1; i < 5; i++)
+    {
+        for(j = 1; j < 9; j++)
+            printf("$");
+        printf("\n");
+    }
+
+    return 0;
+}
+
+7.
+a.Hi! Hi! Hi! Bye! Bye! Bye! Bye! 
+b.ACGM
+
+8.
+a.Go west, youn
+b.Hp!xftu-!zpvo
+c.Go west, young
+d.$o west, youn
+
+9.
+31|32|33|30|31|32|33|
+***
+1
+5
+9
+13
+
+***
+2 6
+4 8
+8 10
+
+***
+======
+=====
+====
+===
+==
+
+10.
+a.mint
+b.10
+c.double
+d.ii
+
+11.
+#include <stdio.h>
+#define SIZE    8
+int main(void)
+{
+    int by_twos[SIZE];
+    int index;
+
+    for (index = 0; index < SIZE; index++)
+        by_twos[index] = 2 * index;
+    for (index = 0; index < SIZE; index++)
+        printf("%d ", by_twos[index]);
+    printf("\n");
+    return 0;
+}
+
+12.
+long function()
+{
+	******
+	return long ******;
+}
+
+13.
+long function(int num)
+{
+    return ((long)num) * num;
+}
+
+14.
+1: Hi!
+k = 1
+k is 1 in the loop
+Now k is 3
+k = 3
+k is 3 in the loop
+Now k is 5
+k = 5
+k is 5 in the loop
+Now k is 7
+k = 7

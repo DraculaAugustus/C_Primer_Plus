@@ -1,0 +1,40 @@
+1.
+getchar()返回一个ch (int char), putchar(getchar()) == putchar(ch)
+getchar(putchar())  getchar(putchar()): 错误
+
+2.
+a. H
+b.报警的声音
+c.换行光标回到屏幕最左侧部分
+d.退格
+
+3.
+./count<eassay>essayct
+或者
+./count>essayct<eassay
+
+4.
+a.错误，重定位两侧都是文件
+b.错误，缺少输入重定位符
+c.正确
+
+5.
+EOF (end of file),当我们调用scanf()或getchar()时候，读取到文件末尾时返回文件末尾标志
+
+6.
+a.If you 
+b.HJacrthjacrt
+
+7.把不同的文件形式都会映射成统一的数据流，对它们做相同的处理
+
+8.
+int scores;
+char grade;
+printf("Enter the score.\n");
+scanf("%d", &scores);
+printf("Enter the greade.\n")
+grade = getchar();
+
+
+78 c
+如上述程序段，输入数字78和字母c后，获得的是数字78与空格

@@ -1,0 +1,42 @@
+1.
+a.x=(5)*6=30
+b.x=(18)/2*3=27
+c.y=x=(5)/4=1
+d.y=3+2*(x=3)=9
+
+2.
+a.x=3+3.3=3.0+3.3=6.3	取整 = 6
+b.x=5*10.5=5.0*10.5=52.5	取整 = 53
+c.x=0.0*22.0=0.00	取整 = 0
+d.x=66.0/5=66.0/5.0=13.2	取整 = 13
+
+3.
+a.37.5
+b.1.5
+c.35
+d.37
+e.37.5
+f.35.0
+
+4.
+#include <stdio.h>
+int main(void)
+{
+	int i = 1;
+	
+	float n;
+
+	printf("What out! Here come a bunch of fractions!\n");
+
+	while(i++ < 30)
+	{
+		n = 1/i;
+		printf("%f", n);
+	}
+
+	printf("That's all, folks!\n");
+	
+	return 0;
+}
+
+5.见代码text5.c
