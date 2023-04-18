@@ -21,14 +21,31 @@ int main(void)
 		printf("Enter second number: ");
 		num2 = get_float();
 
-		while(choice)
+		while(num2 == 0 && choice == 'd')
+		{
+			printf("Enter a number other than 0: ");
+			num2 = get_float();
+		}
+
+		switch(choice)
 		{
 			case 'a':
+				printf("%g + %g = %g\n", num1, num2, num1+num2);
+				break;
 			case 's':
+				printf("%g - %g = %g\n", num1, num2, num1-num2);
+				break;
 			case 'm':
+				printf("%g * %g = %g\n", num1, num2, num1*num2);
+				break;
 			case 'd':
+				printf("%g / %g = %g\n", num1, num2, num1/num2);
+				break;
 			default:
+				break;
 		}
+
+		menu();
 	}
 
 	printf("Bye!\n");
@@ -63,10 +80,25 @@ char get_first(void)
 	int input;
 
 	while(isspace(input = getchar()));
-	input = getchar();
 
 	while(getchar() != '\n')
 		continue;
 
 	return input;
+}
+
+float get_float(void)
+{
+	float num;
+	char ch;
+
+	while(scanf("%f", &num) != 1)
+	{
+		while((ch = getchar()) != '\n')
+			putchar(ch);
+		printf(" is not an number.\n");
+		printf("Please enter a float number as 2.4, -1.3e3 or 3: ");
+	}
+
+	return num;
 }
