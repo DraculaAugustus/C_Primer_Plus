@@ -1,0 +1,60 @@
+1.形式参数是定义在被调函数中的变量。实际参数是出现在函数调用中
+的值，该值被赋给形式参数。可以把实际参数视为在函数调用时初始化形式
+参数的值。
+
+2.
+a) void donut(int n)
+b) int gear(int n, int m)
+c) int guess(void)
+d) void stuff_it(double x, double * ptr)
+
+3.
+a) char n_to_char(int n)
+b) int digit(double x)
+c) double * which(double * x, double * y)
+d) int random(void)
+
+4.
+int add(int x, int y)
+{
+	return x + y;
+}
+
+5.
+double add(double x, double y)
+{
+        return x + y;
+}
+
+6.
+void alter(int * u, int * v)
+{
+	int tmp;
+	tmp = *u + *v;
+	*v = *u - *v;
+	*u = tmp;
+}
+
+7.
+void salami(int num)
+{
+	int count;
+	for(count = 1; count <= num; num++)
+		printf(" O salami mio!\n");
+}
+
+8.
+int largest(int x, int y, int z)
+{
+	int max;
+	max = x;
+	if(y > max)
+		max = y;
+	if(z > max)
+		max = z;
+	
+	return max;
+}
+
+9.
+见代码r9.c
