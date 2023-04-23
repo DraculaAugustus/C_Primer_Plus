@@ -1,0 +1,86 @@
+1.
+8 8
+4 4
+0 0
+2 2
+
+2.
+4个元素
+
+3.
+ref --> 8的地址
+ref+1 --> 4的地址
+++ref --> ref = ref + 1;但是ref是常量,++ref是相当于常量自增加,有错误
+
+4.
+a.
+*ptr = 12
+*(ptr+2) = 16
+b.
+*ptr = 12
+*(ptr+2) = 14
+
+5.
+a.
+**ptr = 12
+**(ptr+1) = 16
+b.
+**ptr = 12
+**(ptr+1) = 14
+
+6.
+a.
+&grid[22][56]
+b.
+&grid[22][0]
+grid[22]
+c.
+&grid[0][0]
+grid[0]
+*grid
+
+7.
+a. int digits[10];
+b. float rates[6];
+c. int mat[3][5];
+d. char * psa[20];
+e. char (*pstr)[20];
+
+8.
+a. int arr[6] = {1,2,4,8,16,32};
+b. arr[2];
+c. int arr[100] = {[99] = -1};
+d. int arr[100] = {[5] = 101, [10] = 101, [11] = 101, [12] = 101, [13] = 101};
+
+9.
+0~9
+
+10.
+a. right
+b. wrong
+c. wrong
+d. wrong
+e. right
+f. wrong
+g. wrong
+h. right
+
+11.
+int arr[800][600];
+
+12.
+a.
+void process(double arr[], int n); process(trots, 20);
+void processval(int n, double arr[n]); processval(20, trots);
+b.
+void process(short arr[][30], int n); process(clops, 10)
+void processval(int n, int m, short arr[n][m]);
+processval(10, 30, clops);
+c.
+void process(long arr[][10][15], int n); process(shots, 5)
+void processval(int n, int m, int l, long arr[n][m][l]);
+processval(5, 10, 15, shots);
+
+13.
+a. show((int [4]){8,3,9,2}, 4);
+b. show2({(double [2][3]){8,3,9},{5,4,1}}, 2);
