@@ -23,7 +23,7 @@ int main(void)
 		ct++;
 	}
 	stsrt(ptstr, ct);	/* 字符串排序函数	*/
-	puts("\nHere's the sorted list:\n");
+	puts("Here's the sorted list:\n");
 	for (k = 0; k < ct; k++)
 		puts(ptstr[k]);		/* 排序后的指针 	*/
 
